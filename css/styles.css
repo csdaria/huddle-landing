@@ -1,0 +1,171 @@
+:root{
+    --pink:hsl(322, 100%, 66%);
+    --lightPink: hsl(321, 100%, 78%);
+    --lightRed: hsl(0, 100%, 63%);
+    --veryDarkCyan: hsl(192, 100%, 9%);
+    --veryPaleBlue: hsl(207, 100%, 98%);
+}
+
+html{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_section{
+    display: block;
+    width: 90%;
+    max-width: 850%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    
+}
+
+
+.button{
+    width: max-content; 
+    margin-left: auto;
+    border: 1px solid var(--pink);
+    height:2rem;
+    border-radius: 1rem;
+    color: var(--pink);
+}
+
+.main_title{
+    text-align:center;
+    font-size: 2rem;
+    margin: 5rem;
+    line-height:1.5;
+}
+
+.main_paragraph{
+    text-align:center;
+    font-size: 1.5rem;
+    margin: 4rem;
+    line-height:1.5;
+}
+.button_container{
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    min-width:50%;
+}
+
+.button2{
+    line-height:4;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align:center;
+    text-decoration: none;
+    background-color: var(--pink);
+    height:4rem;
+    color: white;
+    border-radius: 20rem;
+    font-weight:900;
+    border: none;
+    width:100%;
+    margin-bottom:20rem;
+}
+
+.screen_image{
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.responsive{
+    padding: 6rem;
+    margin:0 auto;
+
+}
+
+.numbers{
+    font-size:4rem;
+    font-weight:900;
+    
+}
+
+.desc{
+    font-size: 1rem;
+    color:gray;
+    text-align: center;
+    font-weight:400;
+}
+
+
+.newsletter{
+    display: block;
+    background-color: var(--veryDarkCyan);
+    max-width: 100%;
+    height: 450px;
+}
+
+.newsletter_title{
+    color: white;
+    text-transform: uppercase;
+    padding:2rem;
+}
+
+.news_para{
+    color: white;
+    margin: 2rem;
+    line-height: 2rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2rem;
+}
+
+.empty_button{
+    background-color: white;
+    min-height:2rem;
+    width:100%;
+    color:white;
+    height:4rem;
+    border-radius: .5rem;
+}
+
+.pink_button{
+    text-align:center;
+    margin-top:2rem;
+    background-color:var(--pink);
+    margin-left: auto;
+    height:4rem;
+    width: 12rem;
+    border-radius: .5rem;
+    line-height:4;
+    text-decoration: none;
+    color:white;
+}
+
+@media(orientation:landscape){
+    .responsive{
+        display:flex;
+        flex-direction:row;
+        
+    }
+    .lock1, .lock2{
+        margin:0 auto;
+    }
+
+}
